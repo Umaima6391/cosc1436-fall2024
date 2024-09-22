@@ -21,7 +21,6 @@ int main()
     //Prompt the user for name and grades
     std::cout << "Please enter your name: ";
     std::cin >> name;
-
     std::cout << "Please enter lab 1 grade: ";
     std::cin >> lab1;
     std::cout << "Please enter lab 2 grade: ";
@@ -30,7 +29,6 @@ int main()
     std::cin >> lab3;
     std::cout << "Please enter lab 4 grade: ";
     std::cin >> lab4;
-
     std::cout << "Please enter exam 1 grade: ";
     std::cin >> exam1;
     std::cout << "Please enter exam 2 grade: ";
@@ -57,19 +55,16 @@ int main()
     std::cout << "Lab 3 = " << lab3 << "\n";
     std::cout << "Lab 4 = " << lab4 << "\n";
 
-
     //Display exam grades and average
     std::cout << "\n" << name << ", your exam grades are:\n";
     std::cout << "Exam 1 = " << exam1 << "\n";
     std::cout << "Exam 2 = " << exam2 << "\n";
     std::cout << "Exam 3 = " << exam3 << "\n";
 
-
     // Display participation and final exam grades
     std::cout << "\n" << name << ", your other grades are:\n";
     std::cout << "Participation = " << participation << "\n";
     std::cout << "Final Exam = " << finalExam << "\n";
-
 
     // Display class average
     std::cout << "\n" << name << ", your class grade is:\n";
