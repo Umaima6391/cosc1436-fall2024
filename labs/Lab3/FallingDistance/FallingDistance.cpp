@@ -7,7 +7,7 @@
 #include <iomanip> // for std::setw and std::setprecision
 using namespace std;
 
-// Story 1: This function displays programming information
+// Story 1: Function to display program information
 // Function: displayProgramInfo
 // Purpose: Displays the program's title, author, and course information.
 // Parameters: None
@@ -18,9 +18,9 @@ void displayProgramInfo() {
     cout << "Course: COSC 1436 - Fall 2024\n";
 }
 
-// Story 2: This function prompts the user for falling time ie, (1-60 seconds)
+// Story 2: Function to prompt the user for falling time (1-60 seconds)
 // Function: getFallingTime
-// Purpose: Prompt the user to enter a valid falling time between 1 and 60 seconds.
+// Purpose: Prompts the user to enter a valid falling time between 1 and 60 seconds.
 // Parameters: None
 // Returns: An integer representing the falling time.
 int getFallingTime() {
@@ -36,7 +36,7 @@ int getFallingTime() {
     return time;
 }
 
-// Story 3: This is a function to calculate the falling distance based on time (in seconds)
+// Story 3: Function to calculate the falling distance based on time (in seconds)
 // Function: calculateFallingDistance
 // Purpose: Calculates the falling distance using the formula 0.5 * g * t^2, where g is gravity and t is time.
 // Parameters: An integer representing the time in seconds.
@@ -46,9 +46,9 @@ double calculateFallingDistance(int time) {
     return 0.5 * gravity * time * time; // Distance = 0.5 * g * t^2
 }
 
-// Story 4 & 6: To display the falling distance table with correct units (meters or feet)
+// Story 4 & 6: Display the falling distance table with correct units (meters or feet)
 // Function: displayFallingTable
-// Purpose: This Function displays a table of falling distances for each second, either in meters or feet.
+// Purpose: Displays a table of falling distances for each second, either in meters or feet.
 // Parameters: An integer for the falling time and a boolean for whether the distances should be in meters or feet.
 // Returns: Nothing (void)
 void displayFallingTable(int time, bool inMeters) {
@@ -73,7 +73,7 @@ void displayFallingTable(int time, bool inMeters) {
     }
 }
 
-// Story 5: This function allows the user to choose the units (meters or feet)
+// Story 5: Function to allow user to choose the units (meters or feet)
 // Function: getUnitsChoice
 // Purpose: Prompts the user to choose the unit for displaying distances (meters or feet).
 // Parameters: None
@@ -92,7 +92,7 @@ bool getUnitsChoice() {
     return (unit == 'm'); // Return true if meters is chosen, false for feet
 }
 
-// This is the main function (entry point of the program)
+// Main function (entry point of the program)
 // Function: main
 // Purpose: Coordinates the program's flow by calling the other functions.
 // Parameters: None
